@@ -1,24 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="psychological_tests" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testMenu" translatesAutoresizingMaskIntoConstraints="NO" id="3NK-Cp-gmb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="3NK-Cp-gmb" secondAttribute="bottom" id="9Ab-fm-oEK"/>
+                            <constraint firstItem="3NK-Cp-gmb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Hm3-8y-hWm"/>
+                            <constraint firstItem="3NK-Cp-gmb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="Sx0-n9-F84"/>
+                            <constraint firstItem="3NK-Cp-gmb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XME-7N-iao"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-103" y="65"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="T6Z-ft-XlJ">
+            <objects>
+                <viewController id="WQ6-3N-MdH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LuZ-A6-MaZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainMenu" translatesAutoresizingMaskIntoConstraints="NO" id="ONL-Ut-dP6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cH6-zg-pud"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ONL-Ut-dP6" secondAttribute="bottom" id="4IK-4B-boi"/>
+                            <constraint firstItem="ONL-Ut-dP6" firstAttribute="top" secondItem="LuZ-A6-MaZ" secondAttribute="top" id="FnP-qO-YKT"/>
+                            <constraint firstAttribute="trailing" secondItem="ONL-Ut-dP6" secondAttribute="trailing" id="TgG-fz-3AE"/>
+                            <constraint firstItem="ONL-Ut-dP6" firstAttribute="leading" secondItem="LuZ-A6-MaZ" secondAttribute="leading" id="swH-Hj-diD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WYs-BO-cQP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922" y="65"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QTb-mo-fy6">
+            <objects>
+                <viewController id="rv6-TJ-jRs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Agp-m3-8Ta">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="resultMenu" translatesAutoresizingMaskIntoConstraints="NO" id="Uzg-cY-ENE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9TI-ct-vXb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Uzg-cY-ENE" secondAttribute="bottom" id="QgM-WO-vcJ"/>
+                            <constraint firstItem="Uzg-cY-ENE" firstAttribute="leading" secondItem="Agp-m3-8Ta" secondAttribute="leading" id="bF3-Lp-ScQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Uzg-cY-ENE" secondAttribute="trailing" id="oT3-St-lbf"/>
+                            <constraint firstItem="Uzg-cY-ENE" firstAttribute="top" secondItem="Agp-m3-8Ta" secondAttribute="top" id="tZF-M6-aG5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FEc-iz-n1u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1859" y="81"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mainMenu" width="640" height="310"/>
+        <image name="resultMenu" width="533" height="355.5"/>
+        <image name="testMenu" width="560" height="350"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
